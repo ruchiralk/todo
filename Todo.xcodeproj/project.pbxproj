@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		EA7FAD2D23EC57FB00EABFE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD2C23EC57FB00EABFE2 /* AppDelegate.swift */; };
 		EA7FAD2F23EC57FB00EABFE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD2E23EC57FB00EABFE2 /* SceneDelegate.swift */; };
-		EA7FAD3123EC57FB00EABFE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD3023EC57FB00EABFE2 /* ViewController.swift */; };
 		EA7FAD3423EC57FB00EABFE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7FAD3223EC57FB00EABFE2 /* Main.storyboard */; };
 		EA7FAD3623EC57FF00EABFE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7FAD3523EC57FF00EABFE2 /* Assets.xcassets */; };
 		EA7FAD3923EC57FF00EABFE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7FAD3723EC57FF00EABFE2 /* LaunchScreen.storyboard */; };
 		EA7FAD4423EC57FF00EABFE2 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD4323EC57FF00EABFE2 /* TodoTests.swift */; };
 		EA7FAD4F23EC57FF00EABFE2 /* TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD4E23EC57FF00EABFE2 /* TodoUITests.swift */; };
+		EA7FAD5E23EC58E000EABFE2 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD5D23EC58E000EABFE2 /* ItemListViewController.swift */; };
+		EA7FAD6023EC592300EABFE2 /* ItemListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD5F23EC592300EABFE2 /* ItemListViewControllerTest.swift */; };
+		EA7FAD6223ECF0B600EABFE2 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FAD6123ECF0B600EABFE2 /* ItemListDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		EA7FAD2923EC57FB00EABFE2 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7FAD2C23EC57FB00EABFE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7FAD2E23EC57FB00EABFE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA7FAD3023EC57FB00EABFE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA7FAD3323EC57FB00EABFE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA7FAD3523EC57FF00EABFE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA7FAD3823EC57FF00EABFE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		EA7FAD4A23EC57FF00EABFE2 /* TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7FAD4E23EC57FF00EABFE2 /* TodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITests.swift; sourceTree = "<group>"; };
 		EA7FAD5023EC57FF00EABFE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7FAD5D23EC58E000EABFE2 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		EA7FAD5F23EC592300EABFE2 /* ItemListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTest.swift; sourceTree = "<group>"; };
+		EA7FAD6123ECF0B600EABFE2 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,15 @@
 		EA7FAD2B23EC57FB00EABFE2 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				EA7FAD5C23EC58B500EABFE2 /* Model */,
 				EA7FAD2C23EC57FB00EABFE2 /* AppDelegate.swift */,
 				EA7FAD2E23EC57FB00EABFE2 /* SceneDelegate.swift */,
-				EA7FAD3023EC57FB00EABFE2 /* ViewController.swift */,
 				EA7FAD3223EC57FB00EABFE2 /* Main.storyboard */,
 				EA7FAD3523EC57FF00EABFE2 /* Assets.xcassets */,
 				EA7FAD3723EC57FF00EABFE2 /* LaunchScreen.storyboard */,
 				EA7FAD3A23EC57FF00EABFE2 /* Info.plist */,
+				EA7FAD5D23EC58E000EABFE2 /* ItemListViewController.swift */,
+				EA7FAD6123ECF0B600EABFE2 /* ItemListDataProvider.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -115,6 +121,7 @@
 			children = (
 				EA7FAD4323EC57FF00EABFE2 /* TodoTests.swift */,
 				EA7FAD4523EC57FF00EABFE2 /* Info.plist */,
+				EA7FAD5F23EC592300EABFE2 /* ItemListViewControllerTest.swift */,
 			);
 			path = TodoTests;
 			sourceTree = "<group>";
@@ -126,6 +133,13 @@
 				EA7FAD5023EC57FF00EABFE2 /* Info.plist */,
 			);
 			path = TodoUITests;
+			sourceTree = "<group>";
+		};
+		EA7FAD5C23EC58B500EABFE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7FAD3123EC57FB00EABFE2 /* ViewController.swift in Sources */,
+				EA7FAD5E23EC58E000EABFE2 /* ItemListViewController.swift in Sources */,
+				EA7FAD6223ECF0B600EABFE2 /* ItemListDataProvider.swift in Sources */,
 				EA7FAD2D23EC57FB00EABFE2 /* AppDelegate.swift in Sources */,
 				EA7FAD2F23EC57FB00EABFE2 /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7FAD6023EC592300EABFE2 /* ItemListViewControllerTest.swift in Sources */,
 				EA7FAD4423EC57FF00EABFE2 /* TodoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
